@@ -1,0 +1,22 @@
+
+server:
+    port: 5000
+spring:
+    datasource:
+        password: love
+        url: jdbc:mysql://localhost:8085/expense
+        username: admin
+    security:
+      oauth2:
+        client:
+          registration:
+            google:
+              clientId: 1064090924109-6n1ajhvoua2c5h8v1pn0oe0l9sp928dh.apps.googleusercontent.com
+              clientSecret: c7gq5Og_L6HLdAvyBI75fn5s
+              redirectUri: http://localhost:5000/auth/google/callback
+              scope:
+                - email
+                - profile
+                - openid
+jwt:
+    secret: sdgsvhgvdshdv
